@@ -72,18 +72,15 @@ img {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-}
-
 p {
     padding-left: 5%;
 }
 
-#team-values {
+.page P {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-#description {
+.page h1 {
     text-align: center;
 }
