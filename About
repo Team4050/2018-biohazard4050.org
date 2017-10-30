@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8"><title>About 4050</title>
+    </head>
+        <header> 
+            <h1 id="header">Biohazard 4050</h1>
+        </header>
+            <nav class="sitemenu">
+                <div class="navwrappper">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="TheTeam.html">The Team</a></li>
+                    </ul>
+                </div>
+            </nav>  
+     <body>
+    <h1>About Our Team </h1>
+    </body>
+           
+</html>
