@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 4%;
 }
 
 .sitemenu {
@@ -91,20 +92,15 @@ img {
 
 .column { 
     float: left;
-    width: 30%;
+    width: 33.333%;
     padding: 50px;
-    height: 400px;
-    text-indent: 10px;
+    height: 300px;
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
-
-p {
-    text-indent: 35px;
 }
 
 .about {
@@ -138,7 +134,8 @@ p {
     margin: auto;
     text-shadow: 1px 0px 1px black;
     transition: .2s all linear;
-    align-content: center;
+    left: 0;
+    right: 0;
 }
 
  .get-involved a  :hover {
