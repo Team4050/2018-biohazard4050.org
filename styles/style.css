@@ -6,8 +6,8 @@ body {
 
 .sitemenu {
     width: 100%;
-    background: #A2CEA5;
-    border-top: 8px solid #126758;
+    background: #109848;
+    border-top: 8px solid #585958;
     padding-bottom: 3%;
 }
 
@@ -39,11 +39,11 @@ body {
 }
 
 .sitemenu ul li.active {
-    background-color: white;
+    background-color: #108548;
 }
 
 .sitemenu ul li.active a {
-    color: #279182;
+    color: white;
 }
 
 html {
@@ -83,4 +83,59 @@ img {
 
 .header-text {
     text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column { 
+    float: left;
+    width: 25%;
+    padding: 20px;
+    height: 300px;    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about {
+    font-family: 'Neogrey';
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.about P {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+ .get-involved a  {
+    color: white;
+    background-color: #109848;
+    padding: 10px;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Neogrey';
+    text-decoration: none;
+    border-bottom: 3px solid #585958;
+    border-radius: 5px;
+    position: absolute;
+    margin: auto;
+    text-shadow: 1px 0px 1px black;
+    transition: .2s all linear;
+    align-content: center;
+}
+
+ .get-involved a  :hover {
+    background-color: #45B29D;
 }
