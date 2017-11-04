@@ -115,7 +115,7 @@ img {
     text-align: left;
 }
 
- .get-involved a  {
+ .get-involved {
     color: white;
     background-color: #109848;
     padding: 10px;
@@ -138,6 +138,6 @@ img {
     right: 0;
 }
 
- .get-involved a  :hover {
+ .get-involved:hover {
     background-color: #45B29D;
 }
