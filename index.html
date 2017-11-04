@@ -1,49 +1,102 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://dafont.com/neogrey.font" rel ="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="styles/style.css" rel="stylesheet" type="text/css">
-        <meta charset="utf-8">
-        <title>Biohazard 4050</title>
-    </head>
-    <body>
-        <header> 
-            <h1 id="header">Biohazard 4050</h1>
-        </header>
-            <nav class="sitemenu">
-                <div class="navwrappper">
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="get-involved.html">Get Involved</a></li>
-                        <li><a href="about.html">About</a></li>
+
+<head>
+    <link href="https://dafont.com/neogrey.font">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/glide.core.min.css">
+    <link rel="stylesheet" href="styles/glide.theme.css">
+    <meta charset="utf-8">
+    <title>Biohazard 4050</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="header">Biohazard 4050</h1>
+    </header>
+    <nav class="sitemenu">
+        <div class="navwrappper">
+            <ul>
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="get-involved.html">Get Involved</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="header-text">
+            <h2> Welcome to Team 4050's spot on the internet! </h2>
+            <h3> Feel free to have a poke around!</h3>
+        </div>
+        <div class="home">
+
+            <!-- 
+                This is the slider element 
+                See here for the docs: http://glide.jedrzejchalubek.com/docs.html
+            -->
+            <div id="slider" class="glide">
+                <!-- These are the arrows for left/right navigation in the slider -->
+                <div class="glide__arrows">
+                    <button class="glide__arrow prev" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow next" data-glide-dir=">">next</button>
+                </div>
+
+                <!-- The actual slider content goes here -->
+                <div class="glide__wrapper">
+                    <ul class="glide__track">
+                        <li class="glide__slide">
+                            <img src="images/P1080025_(2).JPG">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="images/DSC_2791_(2).JPG">
+                        </li>
                     </ul>
                 </div>
-            </nav>     
-        <main>
-            <div class="header-text">
-                <h2> Welcome to Team 4050's spot on the internet! </h2>
-                <h3> Feel free to have a poke around!</h3>
+
+                <!-- These are the buttons at the bottom -->
+                <div class="glide__bullets"></div>
             </div>
-            <div class="home">
-                        <img src="images/P1080025_(2).JPG">
-                        <p>Biohazard 4050 is a FIRST Robotics Competition Team, a group of high-schoolers who work each year to design, build, and</p>
-                        <p>program a robot to compete at regional competitions, and that's just scratching the surface. From toothbrush</p>
-                        <p>robots to legos to carwashes, we have a crazy ton of fun.</p>
-                        <img src="images/DSC_2791_(2).JPG">
-                <div class="row">
-                    <div class="column" style="background-color: white;"><h2>Reaching the Next Generation</h2>
-                        <h3>It's our mission to reach out to students of all ages, gearing them to expand their horizons through STEM and life skills.</h3></div>
-                    <div class="column" style="background-color: white;"><h2>Developing New Skills</h2>
-                        <h3>Members gain valuable experience in many STEM skills, such as mechanics, wiring, fabrication, and programming; not to mention useful life skills, including
-                        strategic thinking, writing, public speaking, and much more.</h3></div>
-                    <div class="column" style="background-color: white;"><h2>Growing in Knowledge</h2>
-                        <h3>Students leave the team with the Technical experience and knowledge that accompanies participation in a FIRST program.</h3></div>
+
+            <p>Biohazard 4050 is a FIRST Robotics Competition Team, a group of high-schoolers who work each year to design,
+                build, and</p>
+            <p>program a robot to compete at regional competitions, and that's just scratching the surface. From toothbrush</p>
+            <p>robots to legos to carwashes, we have a crazy ton of fun.</p>
+
+            <div class="row">
+                <div class="column" style="background-color: white;">
+                    <h2>Reaching the Next Generation</h2>
+                    <h3>It's our mission to reach out to students of all ages, gearing them to expand their horizons through
+                        S..TEM and life skills.</h3>
                 </div>
-                        <a class="get-involved" href="get-involved.html">Get Involved!</a>
+                <div class="column" style="background-color: white;">
+                    <h2>Developing New Skills</h2>
+                    <h3>Members gain valuable experience in many STEM skills, such as mechanics, wiring, fabrication, and programming;
+                        not to mention useful life skills, including strategic thinking, writing, public speaking, and much
+                        more.
+                    </h3>
+                </div>
+                <div class="column" style="background-color: white;">
+                    <h2>Growing in Knowledge</h2>
+                    <h3>Students leave the team with the Technical experience and knowledge that accompanies participation in
+                        a FIRST program.</h3>
+                </div>
             </div>
-        </main>
-    </body>
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="scripts/main.js"></script>
+            <a class="get-involved" href="get-involved.html">Get Involved!</a>
+        </div>
+    </main>
+</body>
+<!-- Include jQuery -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Include glide.js, the slider -->
+<script src="scripts/glide.min.js"></script>
+<!-- Include our main script -->
+<script src="scripts/main.js"></script>
+
 </html>
