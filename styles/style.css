@@ -91,15 +91,20 @@ img {
 
 .column { 
     float: left;
-    width: 25%;
-    padding: 20px;
-    height: 300px;    
+    width: 30%;
+    padding: 50px;
+    height: 400px;
+    text-indent: 10px;
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+p {
+    text-indent: 35px;
 }
 
 .about {
