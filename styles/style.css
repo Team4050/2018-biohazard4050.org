@@ -66,12 +66,12 @@ img {
 
 #header {
   text-align: center;
-  font-family: 'Orbitron';
+  font-family: 'Neogrey';
 }
 
 .home {
   text-align: center;
-  font-family: 'Orbitron';
+  font-family: 'Neogrey';
 }
 
 .home h3 {
@@ -104,7 +104,7 @@ img {
 }
 
 .about {
-  font-family: 'orbitron';
+  font-family: 'Neogrey';
   text-align: center;
   padding-left: 4%;
   padding-right: 4%;
@@ -126,7 +126,7 @@ img {
   align-items: center;
   font-size: 22px;
   font-weight: bold;
-  font-family: 'orbitron';
+  font-family: 'Neogrey';
   text-decoration: none;
   border-bottom: 3px solid #585958;
   border-radius: 5px;
