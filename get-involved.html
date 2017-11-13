@@ -2,35 +2,132 @@
 <html>
 
 <head>
-    <link href="https://dafont.com/neogrey.font">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--Import Google Icon Font-->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Add links for the fonts used -->
+            <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto" rel="stylesheet ">
+    <!--Import css-->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    
+    <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8">
     <title>Biohazard 4050</title>
 </head>
 
 <body>
-    <header>
-        <h1 id="header">Biohazard 4050</h1>
-    </header>
-    <nav class="sitemenu">
-        <div class="navwrappper">
+    
+    <!--Navigation-->
+            <nav class="nav-extended green darken-3">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"><img src="images/logo.svg">Logo</a>
+              <a href="#" class="brand-logo center">Biohazard 4050</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="get-involved.html">Get Involved</a></li>
+                  </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+                <li><a href="about.html"><i class="material-icons">person</i>About</a></li>
+                <li><a class="active" href="get-involved.html">Get Involved</a></li>
+              </ul>
+            </div>
+          </nav>
+     
+        <!-- Fixed Action Button -->
+        <div class="fixed-action-btn">
+            <a href='#' class="btn-floating pulse green darken-3 btn-large"><i class="large material-icons">expand_less</i></a>
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="active">
-                    <a href="get-involved.html">Get Involved</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
+                <li><a href='https://www.facebook.com/Biohazard4050/' class="btn-floating blue darken-1 btn-large"><img src="images/icons/fb.svg"></a></li>
+                <li><a href='#' class="btn-floating blue lighten-2 btn-large"><img src="images/icons/twitter.svg"></a></li>
+                <li><a href='https://www.youtube.com/channel/UCCdxzPtxpsP_uP6ghbmhfaA' class="btn-floating red btn-large"><img src="images/icons/youtube.svg"></a></li>
+                <li><a href='#' class="btn-floating orange btn-large"><img src="images/icons/blog.svg"></a></li>
+                <li><a href='#' class="btn-floating purple btn-large"><img src="images/icons/stats.svg"></a></li>
             </ul>
         </div>
-    </nav>
-    <main class="content">
-
+        
+    <main>
+        <div class="padding-4 flow-text center-align">
+            <h3>Get Involved</h3>
+            <div class="divider div-green div-80"></div>
+            <form>
+                <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" id="name">
+                    <label class="active" for="name">Full Name</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input id="icon_prefix" type="email" id="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <p>What are you interested in? (Choose any that apply)</p>
+                <p>
+                    <input type="checkbox" id="mechanical" />
+                    <label for="mechanical">Mechanical</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="electrical" />
+                    <label for="electrical">Electrical</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="programming" />
+                    <label for="programming">Programming</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="scouting" />
+                    <label for="scouting">Scouting</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="media" />
+                    <label for="media">Media</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="writing" />
+                    <label for="writing">Writing</label>
+                </p>
+                
+                <div class="input-field">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="icon_prefix" type="textarea" id="textarea" class="materialize-textarea"></textarea>
+                    <label for="textarea">Text Area</label>
+                </div>
+            </form>
+        
+            </div>
     </main>
+    <footer class="page-footer grey darken-1">
+
+        <div class="row">
+            <ul class="footer-connect col s12">
+                <li class="fb-icon"><a class="fancy-underline" href="http://l.cs-5.me/biohazard4050fb" target="_blank">Facebook</a>
+                </li>
+                <li class="blog-icon"><a class="fancy-underline" href="http://www.biohazard4050.org/blog" target="_blank">Blog</a>
+                </li>
+                <li class="twitter-icon"><a class="fancy-underline" href="http://l.cs-5.me/biotw"
+                                        target="_blank">Twitter</a></li>
+                <li class="youtube-icon"><a class="fancy-underline" href="http://l.cs-5.me/bioyt"
+                                        target="_blank">YouTube</a></li>
+                <li class="tba-icon"><a class="fancy-underline" href="http://l.cs-5.me/bioblue" target="_blank">The Blue
+                Alliance</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <div class="container"> 2016 Biohazard 4050 - <a class="fancy-underline"
+                                                         href="https://pulsedevelopmentgroup.github.io/"
+                                                         target="_blank">Design by Pulse Development Group</a> - <a
+                class="modal-trigger fancy-underline hide-mobile" href="#aboutSite">About this Site</a></div>
+        </div>
+    </footer>
+     
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <!-- Include our main script -->
+      <script src="scripts/main.js"></script>
 </body>
 
 </html>

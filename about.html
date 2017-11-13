@@ -2,35 +2,181 @@
 <html>
 
 <head>
-    <link href="https://dafont.com/neogrey.font">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <meta charset="utf-8">
+   <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Add links for the fonts used -->
+        <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto" rel="stylesheet ">
+    <!--Import css-->
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        
+    <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8">
     <title>Biohazard 4050</title>
 </head>
 
 <body>
-    <header>
-        <h1 id="header">Biohazard 4050</h1>
-    </header>
-    <nav class="sitemenu">
-        <div class="navwrappper">
+    <!--Navigation-->
+            <nav class="nav-extended green darken-3">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"><img src="images/logo.svg"></a>
+              <a href="#" class="brand-logo center">Biohazard 4050</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="get-involved.html">Get Involved</a></li>
+                  </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+                <li><a class="active" href="about.html"><i class="material-icons"></i>About</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+              </ul>
+            </div>
+            <div class="nav-content">
+              <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="active" href="about.html">Our Team</a></li>
+                <li class="tab"><a href="members.html">Members</a></li>
+                <li class="tab"><a href="mentors.html">Mentors</a></li>
+                <li class="tab"><a href="sponsors.html">Sponsors</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+          <!-- Fixed Action Button -->
+        <div class="fixed-action-btn">
+            <a href='#' class="btn-floating pulse green darken-3 btn-large"><i class="large material-icons">expand_less</i></a>
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="get-involved.html">Get Involved</a>
-                </li>
-                <li class="active">
-                    <a href="about.html">About</a>
-                </li>
+                <li><a href='https://www.facebook.com/Biohazard4050/' class="btn-floating blue darken-1 btn-large"><img src="images/icons/fb.svg"></a></li>
+                <li><a href='#' class="btn-floating blue lighten-2 btn-large"><img src="images/icons/twitter.svg"></a></li>
+                <li><a href='https://www.youtube.com/channel/UCCdxzPtxpsP_uP6ghbmhfaA' class="btn-floating red btn-large"><img src="images/icons/youtube.svg"></a></li>
+                <li><a href='#' class="btn-floating orange btn-large"><img src="images/icons/blog.svg"></a></li>
+                <li><a href='http://biohazard4050.org/blog/' class="btn-floating purple btn-large"><img src="images/icons/stats.svg"></a></li>
             </ul>
         </div>
-    </nav>
-    <main class="content">
-
+     
+    <main>
+        <div class="header-text">
+            <h3> About Us </h3>
+            <div class="divider div-green div-80"></div>
+            <br>
+        </div>
+        <div class="about">
+            <div id="content-about" class="padding-4 flow-text center-align">
+                <p>
+                    FIRST Robotics Competition Team “Biohazard” 4050 is the high-school division of the Franklin County
+                    4-H Robotics Club. Since 2012, Team 4050 has provided local students with the opportunity to
+                    participate in the FIRST Robotics Competition program. In the 2015-2016 season, Team 4050 was host
+                    to over 25 students, from 3 states, guided by over a dozen mentors.
+                </p>
+                <p>
+                    The focal point of Team 4050’s existence is participation in FIRST Robotics Competition. Each year,
+                    members and mentors work together to design and build a unique robot. In January, FIRST releases the
+                    annual “Game” that they must design their robot to participate in. To add to the challenge, they are
+                    given only 6 weeks to complete the robot. In the ensuing months, they attend two regional
+                    competitions, where they compete against 50+ other Teams, each with their own unique robot. Teams
+                    who win a regional are given the opportunity to attend a Championship event, where they compete for
+                    best in the world.
+                </p>
+                <p>
+                    In 2015, the FRC Team won the Chesapeake Regional competition and had the opportunity to go to the
+                    World Championship, a huge milestone and a major accomplishment.
+                </p>
+            <img src="images/FullTeam.jpg" class="responsive-img"/>
+             <!-- Team History Tabs -->
+            <h3 class="team-history-header">Team History</h3>
+                <div class="divider div-green div-80"></div>
+                <br>
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a class="green-text active fancy-underline underline-green underline-50"
+                                               href="#year2012"><h5>2012</h5></a></li>
+                            <li class="tab"><a class="green-text fancy-underline underline-green underline-50"
+                                               href="#year2013"><h5>2013</h5></a></li>
+                            <li class="tab"><a class="green-text fancy-underline underline-green underline-50"
+                                               href="#year2014"><h5>2014</h5></a></li>
+                            <li class="tab"><a class="green-text fancy-underline underline-green underline-50"
+                                               href="#year2015"><h5>2015</h5></a></li>
+                            <li class="tab"><a class="green-text fancy-underline underline-green underline-50"
+                                               href="#year2016"><h5>2016</h5></a></li>
+                            <div class="indicator green" style="z-index:1"></div>
+                        </ul>
+                    </div>
+                    <div id="year2012" class="col s12">
+                        Tech Team Franklin began their six-week build period late, with only ten members and a
+                        handful of mentors. After consistent meetings and training in electrical, mechanical, and
+                        programming, our robot “Genesis” was born. We attended the Pittsburgh
+                        Regional and, after a successful learning experience, began preparing for a new year.
+                    </div>
+                    <div id="year2013" class="col s12">
+                        Biohazard 4050 was the new start for our team, with a new name and image. After growing our
+                        team significantly in numbers—by both members and mentors—we engaged in our second season.
+                        Six weeks of intense prototyping, building, and testing
+                        ensued before we and our robot, “Total Meltdown,” attended the Pittsburgh and Chesapeake
+                        Regionals, finishing in the playoffs in both events. We had greatly improved since our start
+                        a year before.
+                    </div>
+                    <div id="year2014" class="col s12">
+                        Biohazard had grown even more, beginning an efficient scouting program and improving our
+                        build strategy. Our robot, “Toxic Lepra-Khan,” was by far our most beautiful robot thus far.
+                        This was the first year we built an identical robot for
+                        practice purposes. We then attended the Pittsburgh Regional—while there, we made the
+                        playoffs and won the Excellence in Engineering Award. Overall, a successful season.
+                    </div>
+                    <div id="year2015" class="col s12">
+                        With our fourth year came experience and a routine schedule. We built our towering
+                        “Anonymous” who stacked totes and recycling containers. After a disappointing appearance at
+                        the Pittsburgh Regional, we made modifications and had the opportunity
+                        to go to the Chesapeake Regional again. While there, we were selected by the top ranked
+                        alliance and won the event! This allowed us to go to the World Championship in St. Louis for
+                        the first time in our existence. We had an amazing time.
+                    </div>
+                    <div id="year2016" class="col s12">
+                        Our fifth year began our new approach to the build season. After heavy strategizing, we
+                        created a game plan for our new robot, “Dialga – The Steel Dragon”. Continuing in our
+                        tradition of building a practice robot, we continued to design
+                        and build after the conclusion of our build season. We attended the Pittsburgh Regional and
+                        nearly won the entire event after making it into the finals. After making further
+                        improvements, we went to the Smoky Mountain Regional and made
+                        it to the quarter-finals. We walked away with a beautiful silver metal and the Quality
+                        Award.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
+     <footer class="page-footer grey darken-1">
+
+        <div class="row">
+            <ul class="footer-connect col s12">
+                <li class="fb-icon"><a class="fancy-underline" href="http://l.cs-5.me/biohazard4050fb" target="_blank">Facebook</a>
+                </li>
+                <li class="blog-icon"><a class="fancy-underline" href="http://www.biohazard4050.org/blog" target="_blank">Blog</a>
+                </li>
+                <li class="twitter-icon"><a class="fancy-underline" href="http://l.cs-5.me/biotw"
+                                        target="_blank">Twitter</a></li>
+                <li class="youtube-icon"><a class="fancy-underline" href="http://l.cs-5.me/bioyt"
+                                        target="_blank">YouTube</a></li>
+                <li class="tba-icon"><a class="fancy-underline" href="http://l.cs-5.me/bioblue" target="_blank">The Blue
+                Alliance</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <div class="container"> 2016 Biohazard 4050 - <a class="fancy-underline"
+                                                         href="https://pulsedevelopmentgroup.github.io/"
+                                                         target="_blank">Design by Pulse Development Group</a> - <a
+                class="modal-trigger fancy-underline hide-mobile" href="#aboutSite">About this Site</a></div>
+        </div>
+    </footer>
+     
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <!-- Include our main script -->
+      <script src="scripts/main.js"></script>
 </body>
 
 </html>
