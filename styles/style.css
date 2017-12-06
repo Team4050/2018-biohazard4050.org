@@ -14,6 +14,7 @@ body {
 
 .header-text {
     text-align: center;
+    font-family: 'Orbitron';
 }
 
 img {
@@ -25,6 +26,7 @@ img {
 
 .flow-text {
     font-size: 1.5em !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*
@@ -58,15 +60,9 @@ img {
 
 }
 
-.home h3 {
-    font-family: 'Roboto', sans-serif;
+.home h5 {
+    font-family: 'Orbitron';
 }
-
-.home p {
-    font-family: 'Roboto', sans-serif;
-}
-
-
 
 /*
 *
@@ -77,15 +73,12 @@ img {
 */
 
 .about {
-    font-family: 'orbitron';
-    text-align: center;
     padding-bottom: 4%;
 }
 
-.about p {
-    font-family: 'Roboto', sans-serif;
+.team-history-header {
+    font-family: 'Orbitron';
 }
-
 /*
 *
 *
@@ -95,13 +88,7 @@ img {
 */
 
 .get-involved {
-    font-family: 'orbitron';
-    text-align: center;
     padding-bottom: 4%;
-}
-
-.get-involved p {
-    font-family: 'Roboto', sans-serif;
 }
 
 /*
