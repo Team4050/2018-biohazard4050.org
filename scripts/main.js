@@ -15,4 +15,7 @@ $(".button-collapse").sideNav();
 // Initialize Carousel Slider
 $('.carousel.carousel-slider').carousel({fullWidth:true});
 
+    
+// Activate Dropdown Menu
+$(".dropdown-button").dropdown({hover: true});
 });

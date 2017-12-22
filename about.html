@@ -18,28 +18,29 @@
 
 <body>
     <!--Navigation-->
-            <nav class="nav-extended green darken-3">
+        <nav class="nav-extended green darken-3">
             <div class="nav-wrapper">
               <a href="#" class="brand-logo"><img src="images/logo.svg"></a>
-              <a href="#" class="brand-logo center">Biohazard 4050</a>
+              <a href="#" class="brand-logo center hide-on-med-and-down">Biohazard 4050</a>
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="get-involved.html">Get Involved</a></li>
+                    <li><a class="fancy-underline" href="index.html">Home</a></li>
+                     <li><a class="active dropdown-button fancy-underline" href="about.html" data-activates="dropdown1">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="about.html">Our Team</a></li>
+                            <li><a href="#!">Members</a></li>
+                            <li><a href="#!">Mentors</a></li>
+                            <li><a href="#!">Sponsors</a></li>
+                        </ul>
+                    <li><a class="fancy-underline" href="get-involved.html">Get Involved</a></li>
+                    <li><a href=#><button class="btn waves-effect green darken-4">BLOG</button></a></li>
                   </ul>
-              <ul class="side-nav" id="mobile-demo">
+              <ul class="side-nav slide-out" id="mobile-demo">
                 <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
-                <li><a class="active" href="about.html"><i class="material-icons"></i>About</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-              </ul>
-            </div>
-            <div class="row">
-              <ul class="about-tabs col s12">
-                <li><a class="active fancy-underline" href="about.html">Our Team</a></li>
-                <li><a class="fancy-underline" href="members.html">Members</a></li>
-                <li><a class="fancy-underline" href="mentors.html">Mentors</a></li>
-                <li><a class="fancy-underline" href="sponsors.html">Sponsors</a></li>
+                <li><a class="active dropdown-button fancy-underline" href="#!" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i><i class="material-icons">person</i>About</a></li>
+                <li><a class="active" href="get-involved.html"><i class="material-icons">call_made</i>Get Involved</a></li>
+                <div class="divider"></div>
+                <li><a href=#><button class="btn waves-effect green darken-4">BLOG</button></a></li>
               </ul>
             </div>
           </nav>

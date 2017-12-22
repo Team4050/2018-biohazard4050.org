@@ -19,20 +19,29 @@
 </head>
 <body>
     <!--Navigation-->
-            <nav class="nav-extended green darken-3">
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+        <nav class="nav-extended green darken-3">
             <div class="nav-wrapper">
-              <a href="#" class="brand-logo"><img src="images/logo.svg"></a>
-              <a href="#" class="brand-logo center">Biohazard 4050</a>
+              <a href="#!" class="brand-logo"><img src="images/logo.svg"></a>
+              <a href="#!" class="brand-logo center hide-on-med-and-down">Biohazard 4050</a>
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a class="active fancy-underline" href="index.html">Home</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="fancy-underline" href="get-involved.html">Get Involved</a></li>
+                    <li><a href=#><button class="btn waves-effect green darken-4">BLOG</button></a></li>
                   </ul>
-              <ul class="side-nav" id="mobile-demo">
-                <li><a class="active" href="index.html"><i class="material-icons">home</i>Home</a></li>
-                <li><a href="about.html"><i class="material-icons">person</i>About</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
+              <ul class="side-nav slide-out" id="mobile-demo">
+                <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+                <li><a class="dropdown-button fancy-underline" href="#!" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i><i class="material-icons">person</i>About</a></li>
+                <li><a class="active" href="get-involved.html"><i class="material-icons">call_made</i>Get Involved</a></li>
+                <div class="divider"></div>
+                <li><a href=#><button class="btn waves-effect green darken-4">BLOG</button></a></li>
               </ul>
             </div>
           </nav>
@@ -61,12 +70,6 @@
                 See here for the docs: http://glide.jedrzejchalubek.com/docs.html
             -->
             <div id="slider" class="glide">
-                <!-- These are the arrows for left/right navigation in the slider -->
-                <div class="glide__arrows">
-                    <button class="glide__arrow prev" data-glide-dir="<">prev</button>
-                    <button class="glide__arrow next" data-glide-dir=">">next</button>
-                </div>
-
                 <!-- The actual slider content goes here -->
                 <div class="glide__wrapper">
                     <ul class="glide__track">
