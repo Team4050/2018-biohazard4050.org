@@ -25,36 +25,6 @@ footer.page-footer .row {
     cursor: pointer;
 }
 
-.fb-icon {
-    background-image: url(../images/icons/fb.svg);
-    background-repeat: no-repeat;
-    background-size: 25px auto;
-}
-
-.blog-icon {
-    background-image: url(../images/icons/blog.svg);
-    background-repeat: no-repeat;
-    background-size: 25px auto;
-}
-
-.twitter-icon {
-    background-image: url(../images/icons/twitter.svg);
-    background-repeat: no-repeat;
-    background-size: 25px auto;
-}
-
-.youtube-icon {
-    background-image: url(../images/icons/youtube.svg);
-    background-repeat: no-repeat;
-    background-size: 25px auto;
-}
-
-.tba-icon {
-    background-image: url(../images/icons/stats.svg);
-    background-repeat: no-repeat;
-    background-size: 25px auto;
-}
-
 footer {
     position: absolute;
     left: 0;
@@ -67,10 +37,6 @@ footer {
 
 .footer-copyright a {
     color: rgba(255, 255, 255, 0.8);
-}
-
-#aboutSite a {
-    color: #109848;
 }
 
 
@@ -262,4 +228,35 @@ body {
 .padding-5 {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+/* Icons */
+.fb-icon {
+    background-image: url(../images/icons/fb.svg);
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+}
+
+.blog-icon {
+    background-image: url(../images/icons/blog.svg);
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+}
+
+.twitter-icon {
+    background-image: url(../images/icons/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+}
+
+.youtube-icon {
+    background-image: url(../images/icons/youtube.svg);
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+}
+
+.tba-icon {
+    background-image: url(../images/icons/stats.svg);
+    background-repeat: no-repeat;
+    background-size: 25px auto;
 }
