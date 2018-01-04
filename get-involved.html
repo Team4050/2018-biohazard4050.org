@@ -2,35 +2,90 @@
 <html>
 
 <head>
-    <link href="https://dafont.com/neogrey.font">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto" rel="stylesheet ">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
     <title>Biohazard 4050</title>
 </head>
 
 <body>
-    <header>
-        <h1 id="header">Biohazard 4050</h1>
-    </header>
-    <nav class="sitemenu">
-        <div class="navwrappper">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="active">
-                    <a href="get-involved.html">Get Involved</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
+    <!--Navigation-->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Our Team</a></li>
+        <li><a href="#!">Members</a></li>
+        <li><a href="#!">Mentors</a></li>
+        <li><a href="#!">Sponsors</a></li>
+    </ul>
+    <nav class="nav-extended brand-background-green brand-font">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center hide-on-med-and-down">Biohazard 4050</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="active fancy-underline" href="index.html">Home</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="fancy-underline" href="get-involved.html">Get Involved</a></li>
+                <li><a href='https://www.blog.biohazard4050.org'><button class="btn waves-effect green darken-4">BLOG</button></a></li>
+            </ul>
+            <ul class="side-nav slide-out" id="mobile-demo">
+                <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+                <li><a class="dropdown-button fancy-underline" href="#!" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i><i class="material-icons">person</i>About</a></li>
+                <li><a class="active" href="get-involved.html"><i class="material-icons">call_made</i>Get Involved</a></li>
+                <div class="divider"></div>
+                <li><a href=#><button class="btn waves-effect green darken-4">BLOG</button></a></li>
             </ul>
         </div>
     </nav>
-    <main class="content">
+
+    <!-- Fixed Action Button -->
+    <div class="fixed-action-btn">
+        <a href='#' class="btn-floating pulse green darken-3 btn">
+            <i class="large material-icons">expand_less</i>
+        </a>
+        <ul>
+            <li>
+                <a href='https://www.facebook.com/Biohazard4050/' class="btn-floating blue darken-1 btn"><img src="images/icons/fb.svg"></a>
+            </li>
+            <li>
+                <a href='#' class="btn-floating blue lighten-2 btn"><img src="images/icons/twitter.svg"></a>
+            </li>
+            <li><a href='https://www.youtube.com/channel/UCCdxzPtxpsP_uP6ghbmhfaA' class="btn-floating red btn"><i class="material-icons">subscriptions</i></a></li>
+            <li><a href='https://www.blog.biohazard4050.org' class="btn-floating orange btn"><i class="material-icons">comment</i></a></li>
+            <li><a href='#' class="btn-floating purple btn"><i class="material-icons">insert_chart</i></a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrvhqBXBVx6K3GfVwB_8R1SR0q7xkaZEV4BS1eKd0zMangdw/viewform?embedded=true">Loading...</iframe>
+        </div>
 
     </main>
+
+    <footer class="page-footer brand-background-gray">
+        <div class="row">
+            <ul class="footer-connect col s12">
+                <li class="fb-icon"><a class="fancy-underline" href="http://l.cs-5.me/biohazard4050fb" target="_blank">Facebook</a>
+                </li>
+                <li class="blog-icon"><a class="fancy-underline" href="https://blog.biohazard4050.org" target="_blank">Blog</a>
+                </li>
+                <li class="twitter-icon"><a class="fancy-underline" href="http://l.cs-5.me/biotw" target="_blank">Twitter</a></li>
+                <li class="youtube-icon"><a class="fancy-underline" href="http://l.cs-5.me/bioyt" target="_blank">YouTube</a></li>
+                <li class="tba-icon"><a class="fancy-underline" href="http://l.cs-5.me/bioblue" target="_blank">The Blue Alliance</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright brand-font">
+            <div class="container"> 2017 Biohazard 4050 - <a class="modal-trigger fancy-underline hide-mobile" href="#aboutSite">About this Site</a></div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
