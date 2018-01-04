@@ -2,17 +2,15 @@
 <html>
 
 <head>
-    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Add links for the fonts used -->
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto" rel="stylesheet ">
-    <!--Import css-->
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!--Glide Imports-->
     <link rel="stylesheet" href="styles/glide.core.min.css">
     <link rel="stylesheet" href="styles/glide.theme.css">
 
-    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
     <title>Biohazard 4050</title>
@@ -20,28 +18,38 @@
 
 <body>
     <!--Navigation-->
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">Our Team</a></li>
-        <li><a href="#!">Members</a></li>
-        <li><a href="#!">Mentors</a></li>
-        <li><a href="#!">Sponsors</a></li>
-    </ul>
-    <nav class="nav-extended brand-background-green brand-font">
+    <nav class="nav-extended brand-background-green-darker brand-font">
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo center hide-on-med-and-down">Biohazard 4050</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            <!--Desktop-->
+            <ul class="right hide-on-med-and-down">
                 <li><a class="active fancy-underline" href="index.html">Home</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button" data-beloworigin="true" data-activates="about-dropdown-d">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                <ul id="about-dropdown-d" class="dropdown-content">
+                        <li><a href="#!">Our Team</a></li>
+                        <li><a href="#!">Members</a></li>
+                        <li><a href="#!">Mentors</a></li>
+                        <li><a href="#!">Sponsors</a></li>
+                </ul>
                 <li><a class="fancy-underline" href="get-involved.html">Get Involved</a></li>
-                <li><a href='https://www.blog.biohazard4050.org'><button class="btn waves-effect green darken-4">BLOG</button></a></li>
+                <li><a href='https://blog.biohazard4050.org'><button class="btn waves-effect green darken-4">BLOG</button></a></li>
             </ul>
-            <ul class="side-nav slide-out" id="mobile-demo">
+
+            <!--Mobile-->
+            <a data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="side-nav slide-out" id="mobile">
                 <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
-                <li><a class="dropdown-button fancy-underline" href="#!" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i><i class="material-icons">person</i>About</a></li>
+                <li><a class="dropdown-button" data-activates="about-dropdown-m"><i class="material-icons right">arrow_drop_down</i><i class="material-icons">person</i>About</a></li>
+                <ul id="about-dropdown-m" class="dropdown-content">
+                        <li><a href="#!">Our Team</a></li>
+                        <li><a href="#!">Members</a></li>
+                        <li><a href="#!">Mentors</a></li>
+                        <li><a href="#!">Sponsors</a></li>
+                </ul>
                 <li><a class="active" href="get-involved.html"><i class="material-icons">call_made</i>Get Involved</a></li>
                 <div class="divider"></div>
-                <li><a href=#><button class="btn waves-effect green darken-4">BLOG</button></a></li>
+                <li><a href="https://blog.biohazard4050.org"><button class="btn waves-effect green darken-4">BLOG</button></a></li>
             </ul>
         </div>
     </nav>
@@ -54,20 +62,20 @@
                 <a href='https://www.facebook.com/Biohazard4050/' class="btn-floating blue darken-1 btn"><img src="images/icons/fb.svg"></a>
             </li>
             <li>
-                <a href='#' class="btn-floating blue lighten-2 btn"><img src="images/icons/twitter.svg"></a>
+                <a href='https://twitter.com/frc4050' class="btn-floating blue lighten-2 btn"><img src="images/icons/twitter.svg"></a>
             </li>
             <li><a href='https://www.youtube.com/channel/UCCdxzPtxpsP_uP6ghbmhfaA' class="btn-floating red btn"><i class="material-icons">subscriptions</i></a></li>
-            <li><a href='https://www.blog.biohazard4050.org' class="btn-floating orange btn"><i class="material-icons">comment</i></a></li>
+            <li><a href='https://blog.biohazard4050.org' class="btn-floating orange btn"><i class="material-icons">comment</i></a></li>
             <li><a href='#' class="btn-floating purple btn"><i class="material-icons">insert_chart</i></a></li>
         </ul>
     </div>
 
     <main>
-        <div class="center brand-font">
-            <h3> Welcome to Team 4050's spot on the internet! </h3>
-            <h5> Feel free to have a poke around!</h5>
-        </div>
         <div class="home">
+            <div class="center brand-font">
+                    <h3> Welcome to Team 4050's spot on the internet! </h3>
+                    <h5> Feel free to have a poke around!</h5>
+            </div>
             <div id="slider" class="glide">
                 <!-- The actual slider content goes here -->
                 <div class="glide__wrapper">
@@ -89,14 +97,14 @@
                 <p>robots to legos to carwashes, we have a crazy ton of fun.</p>
                 <div class="row padding-3">
                     <div class="col s12 m4 fade-in-right">
-                        <h2 class="center brand-text-green">
+                        <h2 class="center brand-text-green-darker">
                             <i class="medium material-icons main-desc">done_all</i>
                         </h2>
                         <h5 class="center brand-text-gray brand-font">Reaching the Next Generation</h5>
                         <p class="center description">It's our mission to reach out to students of all ages, gearing them to expand their horizons through STEM and life skills.</p>
                     </div>
                     <div class="col s12 m4 fade-in-up">
-                        <h2 class="center brand-text-green">
+                        <h2 class="center brand-text-green-darker">
                             <i class="medium material-icons main-desc">settings</i>
                         </h2>
                         <h5 class="center brand-text-gray brand-font">Developing New Skills</h5>
@@ -104,7 +112,7 @@
                         </p>
                     </div>
                     <div class="col s12 m4 fade-in-left">
-                        <h2 class="center brand-text-green">
+                        <h2 class="center brand-text-green-darker">
                             <i class="medium material-icons main-desc">thumb_up</i>
                         </h2>
                         <h5 class="center brand-text-gray brand-font">Growing in Knowledge</h5>
@@ -114,21 +122,21 @@
             </div>
 
             <!--Get Involved Button-->
-            <a href=/get-involved.html>
-                <button class="btn btn-large waves-effect brand-background-green pulse">Get Involved!</button>
+            <a href="get-involved.html">
+                <button class="btn btn-large waves-effect brand-background-green-darker pulse">Get Involved!</button>
             </a>
         </div>
     </main>
     <footer class="page-footer brand-background-gray">
         <div class="row">
             <ul class="footer-connect col s12">
-                <li class="fb-icon"><a class="fancy-underline" href="http://l.cs-5.me/biohazard4050fb" target="_blank">Facebook</a>
+                <li class="fb-icon"><a class="fancy-underline" href="https://www.facebook.com/Biohazard4050/" target="_blank">Facebook</a>
                 </li>
                 <li class="blog-icon"><a class="fancy-underline" href="https://blog.biohazard4050.org" target="_blank">Blog</a>
                 </li>
-                <li class="twitter-icon"><a class="fancy-underline" href="http://l.cs-5.me/biotw" target="_blank">Twitter</a></li>
-                <li class="youtube-icon"><a class="fancy-underline" href="http://l.cs-5.me/bioyt" target="_blank">YouTube</a></li>
-                <li class="tba-icon"><a class="fancy-underline" href="http://l.cs-5.me/bioblue" target="_blank">The Blue Alliance</a></li>
+                <li class="twitter-icon"><a class="fancy-underline" href="https://twitter.com/frc4050" target="_blank">Twitter</a></li>
+                <li class="youtube-icon"><a class="fancy-underline" href="https://www.youtube.com/channel/UCCdxzPtxpsP_uP6ghbmhfaA" target="_blank">YouTube</a></li>
+                <li class="tba-icon"><a class="fancy-underline" href="https://www.thebluealliance.com/team/4050" target="_blank">The Blue Alliance</a></li>
             </ul>
         </div>
         <div class="footer-copyright brand-font">
@@ -137,7 +145,7 @@
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="scripts/glide.min.js"></script>
     <script src="scripts/main.js"></script>
 

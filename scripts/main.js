@@ -2,7 +2,7 @@ $(document).ready(function(){
 //  After everything is loaded...
 window.onload = function() {
   // Initialize the slider
-  $('#slider').glide({type: 'carousel'});
+  $('#slider').glide({type:'carousel'});
 };
 
   $(document).ready(function(){
@@ -15,7 +15,5 @@ $(".button-collapse").sideNav();
 // Initialize Carousel Slider
 $('.carousel.carousel-slider').carousel({fullWidth:true});
 
-    
-// Activate Dropdown Menu
-$(".dropdown-button").dropdown({hover: true});
+$('.dropdown-button').dropdown({hover: true});
 });

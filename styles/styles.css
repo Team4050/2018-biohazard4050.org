@@ -149,16 +149,24 @@ body {
     font-family: 'Orbitron';
 }
 
-.brand-text-green {
+.brand-text-green-darker {
     color: #2E7D32!important;
+}
+
+.brand-text-green {
+    color: #00c853!important;
 }
 
 .brand-text-gray {
     color: #585958!important;
 }
 
-.brand-background-green {
+.brand-background-green-darker {
     background-color: #2E7D32!important;
+}
+
+.brand-background-green {
+    background-color: #00c853!important;
 }
 
 .brand-background-gray {
