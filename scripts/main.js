@@ -1,19 +1,12 @@
 $(document).ready(function(){
-  //  After everything is loaded...
-  window.onload = function() {
-    // Initialize the slider
-    $('#slider').glide({type:'carousel'});
-  };
-
-  $(document).ready(function(){
-    $('ul.tabs').tabs('select_tab', 'tab_id');
+  $(document).ready(function() {
+    $("#lightSlider").lightSlider(); 
   });
 
-  // Side Nav
-  $(".button-collapse").sideNav();
+  $("#nav-placeholder").load("static-elements/nav.html");
+  $("#footer-placeholder").load("static-elements/footer.html");
 
-  // Initialize Carousel Slider
+  //Init stuff
+  $('ul.tabs').tabs('select_tab', 'tab_id');
   $('.carousel.carousel-slider').carousel({fullWidth:true});
-
-  $('.dropdown-button').dropdown({hover: true});
 });

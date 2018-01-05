@@ -68,6 +68,10 @@ img {
     height: 100%
 }
 
+#blog-button a:hover {
+    background-color: #2E7D32!important;
+}
+
 
 /*
 *

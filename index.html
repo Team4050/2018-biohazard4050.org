@@ -6,11 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto" rel="stylesheet ">
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-    <!--Glide Imports-->
-    <link rel="stylesheet" href="styles/glide.core.min.css">
-    <link rel="stylesheet" href="styles/glide.theme.css">
-
+               
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
     <title>Biohazard 4050</title>
@@ -18,63 +14,14 @@
 
 <body>
     <!--Navigation-->
-    <nav class="nav-extended brand-background-green-darker brand-font">
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo center hide-on-med-and-down">Biohazard 4050</a>
-
-            <!--Desktop-->
-            <ul class="right hide-on-med-and-down">
-                <li><a class="active fancy-underline" href="index.html">Home</a></li>
-                <li><a class="dropdown-button" data-beloworigin="true" href="about.html" data-activates="about-dropdown-d">About<i class="material-icons right">arrow_drop_down</i></a></li>
-                <ul id="about-dropdown-d" class="dropdown-content">
-                        <li><a class="brand-text-green-darker" href="about.html">Our Team</a></li>
-                        <li><a class="brand-text-green-darker" href="#!">Members</a></li>
-                        <li><a class="brand-text-green-darker" href="#!">Mentors</a></li>
-                        <li><a class="brand-text-green-darker" href="#!">Sponsors</a></li>
-                </ul>
-                <li><a class="fancy-underline" href="get-involved.html">Get Involved</a></li>
-                <li><a href='https://blog.biohazard4050.org'><button class="btn waves-effect green darken-4">BLOG</button></a></li>
-            </ul>
-
-            <!--Mobile-->
-            <a data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="side-nav slide-out" id="mobile">
-                <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
-                <li><a class="dropdown-button" data-activates="about-dropdown-m"><i class="material-icons right">arrow_drop_down</i><i class="material-icons">person</i>About</a></li>
-                <ul id="about-dropdown-m" class="dropdown-content">
-                        <li><a class="brand-text-green-darker" href="#!">Our Team</a></li>
-                        <li><a class="brand-text-green-darker" href="#!">Members</a></li>
-                        <li><a class="brand-text-green-darker" href="#!">Mentors</a></li>
-                        <li><a class="brand-text-green-darker" href="#!">Sponsors</a></li>
-                </ul>
-                <li><a class="active" href="get-involved.html"><i class="material-icons">call_made</i>Get Involved</a></li>
-                <div class="divider"></div>
-                <li><a href="https://blog.biohazard4050.org"><button class="btn waves-effect green darken-4">BLOG</button></a></li>
-            </ul>
-        </div>
-    </nav>
-
+    <div id="nav-placeholder"></div>
+    
     <main>
         <div class="home">
             <div class="center brand-font">
                     <h3> Welcome to Team 4050's spot on the internet! </h3>
                     <h5> Feel free to have a poke around!</h5>
             </div>
-            <div id="slider" class="glide">
-                <!-- The actual slider content goes here -->
-                <div class="glide__wrapper">
-                    <ul class="glide__track">
-                        <li class="glide__slide">
-                            <img src="images/P1080025_(2).JPG">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="images/DSC_2791_(2).JPG">
-                        </li>
-                    </ul>
-                </div>
-                <div class="glide__bullets"></div>
-            </div>
-
             <div class="flow-text">
                 <p>Biohazard 4050 is a FIRST Robotics Competition Team, a group of high-schoolers who work each year to design, build, and</p>
                 <p>program a robot to compete at regional competitions, and that's just scratching the surface. From toothbrush</p>
@@ -113,40 +60,10 @@
     </main>
 
     <!--Footer-->
-    <footer class="page-footer brand-background-gray">
-        <div class="fixed-action-btn">
-            <a href='#' class="btn-floating pulse green darken-3 btn"><i class="large material-icons">expand_less</i></a>
-            <ul>
-                <li>
-                    <a href='https://www.facebook.com/Biohazard4050/' class="btn-floating blue darken-1 btn"><img src="images/icons/fb.svg"></a>
-                </li>
-                <li>
-                    <a href='https://twitter.com/frc4050' class="btn-floating blue lighten-2 btn"><img src="images/icons/twitter.svg"></a>
-                </li>
-                <li><a href='https://www.youtube.com/channel/UCCdxzPtxpsP_uP6ghbmhfaA' class="btn-floating red btn"><i class="material-icons">subscriptions</i></a></li>
-                <li><a href='https://blog.biohazard4050.org' class="btn-floating orange btn"><i class="material-icons">comment</i></a></li>
-                <li><a href='#' class="btn-floating purple btn"><i class="material-icons">insert_chart</i></a></li>
-            </ul>
-        </div>
-        <div class="row">
-            <ul class="footer-connect col s12">
-                <li class="fb-icon"><a class="fancy-underline" href="https://www.facebook.com/Biohazard4050/" target="_blank">Facebook</a>
-                </li>
-                <li class="blog-icon"><a class="fancy-underline" href="https://blog.biohazard4050.org" target="_blank">Blog</a>
-                </li>
-                <li class="twitter-icon"><a class="fancy-underline" href="https://twitter.com/frc4050" target="_blank">Twitter</a></li>
-                <li class="youtube-icon"><a class="fancy-underline" href="https://www.youtube.com/channel/UCCdxzPtxpsP_uP6ghbmhfaA" target="_blank">YouTube</a></li>
-                <li class="tba-icon"><a class="fancy-underline" href="https://www.thebluealliance.com/team/4050" target="_blank">The Blue Alliance</a></li>
-            </ul>
-        </div>
-        <div class="footer-copyright brand-font">
-            <div class="container"> 2017 Biohazard 4050 - <a class="modal-trigger fancy-underline hide-mobile" href="#aboutSite">About this Site</a></div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="scripts/glide.min.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>
