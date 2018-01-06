@@ -1,19 +1,17 @@
 $(document).ready(function(){
-  //  After everything is loaded...
-  window.onload = function() {
-    // Initialize the slider
-    $('#slider').glide({type:'carousel'});
-  };
+  $("#nav-placeholder").load("static-elements/nav.html");
+  $("#footer-placeholder").load("static-elements/footer.html");
 
-  $(document).ready(function(){
-    $('ul.tabs').tabs('select_tab', 'tab_id');
+  //Init stuff
+  $('ul.tabs').tabs('select_tab', 'tab_id');
+});
+
+window.onload = function() {
+  $("#home-slider").css("visibility", "visible");
+
+  $("#home-slider").glide({
+    type: "carousel",
+    autoheight: "true"
   });
 
-  // Side Nav
-  $(".button-collapse").sideNav();
-
-  // Initialize Carousel Slider
-  $('.carousel.carousel-slider').carousel({fullWidth:true});
-
-  $('.dropdown-button').dropdown({hover: true});
-});
+}
