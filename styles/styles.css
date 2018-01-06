@@ -80,6 +80,29 @@ img {
     visibility: hidden;
 }
 
+#desktop-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-nav {
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 1220px) and (min-width: 992px) {
+    #left-nav {
+        order: 0!important;
+        margin-left: 0%;
+    }
+    #right-nav {
+        order: 1!important;
+        margin-left: auto;
+    }
+}
+
+#about-dropdown-m li a {
+    padding-right: 10px!important;
+}
 /*
 *
 * Page Styles
