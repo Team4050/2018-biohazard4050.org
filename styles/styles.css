@@ -75,8 +75,10 @@ img {
 #home-slider {
     padding-left: 15%;
     padding-right: 15%;
-}
 
+    margin-bottom: 22px;
+    visibility: hidden;
+}
 
 /*
 *

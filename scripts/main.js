@@ -6,7 +6,12 @@ $(document).ready(function(){
   $('ul.tabs').tabs('select_tab', 'tab_id');
 });
 
-$("#home-slider").glide({
-  type: "carousel",
-  autoheight: "true"
-});
+window.onload = function() {
+  $("#home-slider").css("visibility", "visible");
+
+  $("#home-slider").glide({
+    type: "carousel",
+    autoheight: "true"
+  });
+
+}
