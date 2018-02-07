@@ -33,6 +33,7 @@ footer {
 
 .footer-copyright {
     text-align: center;
+    background-color: #585958!important;
 }
 
 .footer-copyright a {
@@ -122,7 +123,20 @@ img {
 }
 
 #blog-button:hover {
-    background-color: #585958!important;
+    background-color: #585958;
+}
+
+#get-involved-button {
+    transition: background-color 0.3s ease-out;
+    background-color: #2E7D32
+}
+
+#get-involved-button:hover {
+    background-color: #585958;
+}
+
+.indicator {
+    background-color: #109848!important;
 }
 
 /*
@@ -135,6 +149,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .home {
