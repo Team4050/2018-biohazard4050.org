@@ -3,7 +3,7 @@ $(document).ready(function() {
     $("#footer-placeholder").load("/static-elements/footer.html");
 
     //Init stuff
-    $('ul.tabs').tabs('select_tab', 'tab_id');
+    $(".tabs").tabs();
 });
 
 window.onload = function() {
