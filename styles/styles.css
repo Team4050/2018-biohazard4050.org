@@ -33,6 +33,7 @@ footer {
 
 .footer-copyright {
     text-align: center;
+    background-color: #585958!important;
 }
 
 .footer-copyright a {
@@ -68,10 +69,6 @@ img {
     height: 100%
 }
 
-#blog-button a:hover {
-    background-color: #2E7D32!important;
-}
-
 #home-slider {
     padding-left: 15%;
     padding-right: 15%;
@@ -103,6 +100,45 @@ img {
 #about-dropdown-m li a {
     padding-right: 10px!important;
 }
+
+.collapsible-body {
+    padding-left: 32px!important;
+}
+
+#mobile-nav {
+    padding-top: 10px;
+}
+
+#mobile-nav li a {
+    padding-left: 16px;
+}
+
+#mobile-nav i {
+    margin-right: 10px;
+}
+
+#blog-button {
+    transition: background-color 0.3s ease-out;
+    background-color: #246127;
+}
+
+#blog-button:hover {
+    background-color: #585958;
+}
+
+#get-involved-button {
+    transition: background-color 0.3s ease-out;
+    background-color: #2E7D32
+}
+
+#get-involved-button:hover {
+    background-color: #585958;
+}
+
+.indicator {
+    background-color: #109848!important;
+}
+
 /*
 *
 * Page Styles
@@ -113,6 +149,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .home {
@@ -137,6 +174,9 @@ body {
     font-size: 1.5em !important;
     font-family: 'Roboto', sans-serif;
 }
+
+
+
 
 
 /*
@@ -178,9 +218,8 @@ body {
     overflow: hidden;
 }
 
-.center {
-    text-align: center;
-}
+
+
 
 
 /* Underline */
@@ -222,21 +261,23 @@ body {
 }
 
 
+
+
 /* Sizing & Positioning */
 
 .div-70 {
     width: 70%;
-    margin: 10px auto;
+    margin: 10px auto!important;
 }
 
 .div-80 {
     width: 80%;
-    margin: 10px auto;
+    margin: 10px auto!important;
 }
 
 .div-90 {
     width: 90%;
-    margin: 10px auto;
+    margin: 10px auto!important;
 }
 
 .padding-1 {
@@ -263,6 +304,9 @@ body {
     padding-left: 5%;
     padding-right: 5%;
 }
+
+
+
 
 /* Icons */
 .fb-icon {
