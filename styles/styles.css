@@ -1,3 +1,5 @@
+/* Footer Styles */
+
 footer.page-footer {
     margin-top: 0;
     padding-top: 0;
@@ -29,6 +31,8 @@ footer {
     position: absolute;
     left: 0;
     right: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .footer-copyright {
@@ -41,41 +45,19 @@ footer {
 }
 
 
-/*
-*
-* Element Styles
-*
-*/
-
-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 75%;
-    align-content: center;
+#fb-floater {
+    padding-top: 8px;
+    height: 31px;
+    width: 26px;
 }
 
-.form {
-    position: relative;
-    width: 100%;
-    height: 0px;
-    padding-bottom: 100%;
+#twitter-floater {
+    padding-top: 10px;
+    height: 30px;
+    width: 28px;
 }
 
-.form iframe {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%
-}
-
-#home-slider {
-    padding-left: 15%;
-    padding-right: 15%;
-
-    margin-bottom: 22px;
-    visibility: hidden;
-}
+/* Navigation Styles */
 
 #desktop-nav {
     display: flex;
@@ -126,6 +108,89 @@ img {
     background-color: #585958;
 }
 
+
+/* Element Styles */
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+    align-content: center;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 100%;
+}
+
+.form iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.calendar {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 45%;
+}
+
+.calendar iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#get-involved-link {
+    visibility: hidden;
+    height: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#get-involved-link a {
+    color: #109848!important;
+}
+
+@media only screen and (max-width: 992px) {
+    .form {
+        padding-bottom: 150%;
+    }
+
+    .calendar {
+        padding-bottom: 100%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .form {
+        visibility: hidden;
+        padding-bottom: 0%;
+    }
+
+    #get-involved-link {
+        visibility: visible;
+        height: 100%;
+    }
+}
+
+#home-slider {
+    padding-left: 15%;
+    padding-right: 15%;
+
+    margin-bottom: 22px;
+    visibility: hidden;
+}
+
 #get-involved-button {
     transition: background-color 0.3s ease-out;
     background-color: #2E7D32
@@ -139,18 +204,6 @@ img {
     background-color: #109848!important;
 }
 
-#fb-floater {
-    padding-top: 8px;
-    height: 31px;
-    width: 26px;
-}
-
-#twitter-floater {
-    padding-top: 10px;
-    height: 30px;
-    width: 28px;
-}
-
 /*
 *
 * Page Styles
@@ -158,10 +211,17 @@ img {
 */
 
 body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 .home {
@@ -186,9 +246,6 @@ body {
     font-size: 1.5em !important;
     font-family: 'Roboto', sans-serif;
 }
-
-
-
 
 
 /*
