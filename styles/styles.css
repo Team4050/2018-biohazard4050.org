@@ -139,6 +139,18 @@ img {
     background-color: #109848!important;
 }
 
+#fb-floater {
+    padding-top: 8px;
+    height: 31px;
+    width: 26px;
+}
+
+#twitter-floater {
+    padding-top: 10px;
+    height: 30px;
+    width: 28px;
+}
+
 /*
 *
 * Page Styles
