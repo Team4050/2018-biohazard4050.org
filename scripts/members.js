@@ -1,4 +1,5 @@
-var url = "data/memberData.json";
+var xmlhttp = new XMLHttpRequest();
+var url = "/data/memberData.json";
 var descriptions;
 var clickCount = 0;
 

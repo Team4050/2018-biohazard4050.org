@@ -57,6 +57,10 @@ footer {
     width: 28px;
 }
 
+.fixed-action-btn ul {
+    bottom: 45px!important;
+}
+
 /* Navigation Styles */
 
 #desktop-nav {

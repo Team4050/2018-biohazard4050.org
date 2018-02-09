@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "data/mentorData.json";
+var url = "/data/mentorData.json";
 var descriptions;
 var column = 1;
 
