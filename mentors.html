@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto" rel="stylesheet ">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <title>Biohazard 4050</title>
+<script>
+        function loadJS(scripts) {
+            scripts.forEach(function (el) {
+                $.getScript(el, function () {
+                    console.log(el + " successfully loaded");
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+<main>
+    <div class="page-content">
+        <div id="content-mentors" class="main-page">
+            <h1 class="center-align">Mentors</h1>
+            <div class="divider div-green div-80"></div>
+            <p class="flow-text center-align">Our mentors are the glue of our team. The puzzle falls apart without their
+                guidance, input, and valuable skills they pass to us. Click below to learn more about them.</p>
+            <!-- mentors.js will populate this with mentor cards -->
+        </div>
+    </div>
+</main>
+  <!--Footer-->
+    <div id="footer-placeholder"></div>
+     
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="scripts/main.js" onerror="loadJS(['js/mentors.js', 'js/setup.js'])"></script>
+
+</body>
+</html>
