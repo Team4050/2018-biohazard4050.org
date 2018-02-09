@@ -1,20 +1,37 @@
 <script type="text/javascript">
     $(".fixed-action-btn").floatingActionButton();
+    $('.tooltipped').tooltip();
 </script>
 
 <footer class="page-footer brand-background-gray">
     <div class="fixed-action-btn">
-        <a class="btn-floating pulse green darken-3 btn"><i class="large material-icons">expand_less</i></a>
+        <a class="btn-floating pulse green darken-3"><i class="large material-icons">expand_less</i></a>
         <ul>
             <li>
-                <a href='https://www.facebook.com/Biohazard4050/' class="btn-floating blue darken-1 btn"><img id="fb-floater" src="images/icons/fb.svg"></a>
+                <a href='https://www.facebook.com/Biohazard4050/' class="btn-floating tooltipped waves-effect blue darken-1 btn" data-position="left" data-delay="50" data-tooltip="Facebook">
+                    <img id="fb-floater" src="images/icons/fb.svg">
+                </a>
             </li>
             <li>
-                <a href='https://twitter.com/frc4050' class="btn-floating blue lighten-2 btn"><img id="twitter-floater" src="images/icons/twitter.svg"></a>
+                <a href='https://twitter.com/frc4050' class="btn-floating tooltipped waves-effect blue lighten-2 btn" data-position="left" data-delay="50" data-tooltip="Twitter">
+                    <img id="twitter-floater" src="images/icons/twitter.svg">
+                </a>
             </li>
-            <li><a href='https://www.youtube.com/channel/UCCdxzPtxpsP_uP6ghbmhfaA' class="btn-floating red btn"><i class="material-icons">subscriptions</i></a></li>
-            <li><a href='https://blog.biohazard4050.org' class="btn-floating orange btn"><i class="material-icons">comment</i></a></li>
-            <li><a href='#' class="btn-floating purple btn"><i class="material-icons">insert_chart</i></a></li>
+            <li>
+                <a href='https://www.youtube.com/channel/UCCdxzPtxpsP_uP6ghbmhfaA' class="btn-floating tooltipped waves-effect red btn" data-position="left" data-delay="50" data-tooltip="YouTube">
+                    <i class="material-icons">subscriptions</i>
+                </a>
+            </li>
+            <li>
+                <a href='https://blog.biohazard4050.org' class="btn-floating tooltipped waves-effect orange btn" data-position="left" data-delay="50" data-tooltip="Blog">
+                    <i class="material-icons">comment</i>
+                </a>
+            </li>
+            <li>
+                <a href='https://www.thebluealliance.com/team/4050' class="btn-floating tooltipped waves-effect purple btn" data-position="left" data-delay="50" data-tooltip="TheBlueAlliance">
+                    <i class="material-icons">insert_chart</i>
+                </a>
+            </li>
         </ul>
     </div>
 
