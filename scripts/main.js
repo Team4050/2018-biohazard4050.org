@@ -1,5 +1,17 @@
-//  After everything is loaded...
+$(document).ready(function() {
+    $("#nav-placeholder").load("/static-elements/nav.html");
+    $("#footer-placeholder").load("/static-elements/footer.html");
+
+    //Init stuff
+    $(".tabs").tabs();
+});
+
 window.onload = function() {
-  // Initialize the slider
-  $('#slider').glide({type: 'carousel'});
-};
+    $("#home-slider").css("visibility", "visible");
+
+    $("#home-slider").glide({
+        type: "carousel",
+        autoheight: "true"
+    });
+
+}

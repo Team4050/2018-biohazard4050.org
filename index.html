@@ -2,102 +2,91 @@
 <html>
 
 <head>
-    <!-- Add links for the fonts used -->
-    <link href="https://dafont.com/neogrey.font">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet ">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto:300" rel="stylesheet ">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
     <link rel="stylesheet" href="styles/glide.core.min.css">
-    <link rel="stylesheet" href="styles/glide.theme.css">
+    <link rel="stylesheet" href="styles/glide.theme.min.css">
+               
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
     <title>Biohazard 4050</title>
 </head>
 
 <body>
-    <header>
-        <h1 id="header">Biohazard 4050</h1>
-    </header>
-    <nav class="sitemenu">
-        <div class="navwrappper">
-            <ul>
-                <li class="active">
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="get-involved.html">Get Involved</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!--Navigation-->
+    <div id="nav-placeholder"></div>
+    
     <main>
-        <div class="header-text">
-            <h2> Welcome to Team 4050's spot on the internet! </h2>
-            <h3> Feel free to have a poke around!</h3>
-        </div>
         <div class="home">
+            <div class="center brand-font">
+                    <h3> Welcome to Team 4050's spot on the internet! </h3>
+                    <h5> Feel free to have a poke around!</h5>
+            </div>
 
-            <!-- 
-                This is the slider element 
-                See here for the docs: http://glide.jedrzejchalubek.com/docs.html
-            -->
-            <div id="slider" class="glide">
-                <!-- These are the arrows for left/right navigation in the slider -->
-                <div class="glide__arrows">
-                    <button class="glide__arrow prev" data-glide-dir="<">prev</button>
-                    <button class="glide__arrow next" data-glide-dir=">">next</button>
-                </div>
-
-                <!-- The actual slider content goes here -->
+            <div id="home-slider" class="glide">            
                 <div class="glide__wrapper">
                     <ul class="glide__track">
-                        <li class="glide__slide">
-                            <img src="images/P1080025_(2).JPG">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="images/DSC_2791_(2).JPG">
-                        </li>
+                        <li class="glide__slide"><img src="images/imageslider1.jpg"></li>
+                        <li class="glide__slide"><img src="images/imageslider2.jpg"></li>
+                        <li class="glide__slide"><img src="images/imageslider3.jpg"></li>
+                        <li class="glide__slide"><img src="images/imageslider4.jpg"></li>
+                        <li class="glide__slide"><img src="images/imageslider5.jpg"></li>
+                        <li class="glide__slide"><img src="images/imageslider6.jpg"></li>
+                        <li class="glide__slide"><img src="images/imageslider7.jpg"></li>
+                        <li class="glide__slide"><img src="images/imageslider8.jpg"></li>
+                        <li class="glide__slide"><img src="images/imageslider9.jpg"></li>
                     </ul>
-                </div>
-
-                <!-- These are the buttons at the bottom -->
-                <div class="glide__bullets"></div>
+                </div>                
             </div>
 
-            <p>Biohazard 4050 is a FIRST Robotics Competition Team, a group of high-schoolers who work each year to design,
-                build, and</p>
-            <p>program a robot to compete at regional competitions, and that's just scratching the surface. From toothbrush</p>
-            <p>robots to legos to carwashes, we have a crazy ton of fun.</p>
+            <div class="divider green div-80"></div>
 
-            <div class="row">
-                <div class="column" style="background-color: white;">
-                    <h2>Reaching the Next Generation</h2>
-                    <h3>It's our mission to reach out to students of all ages, gearing them to expand their horizons through
-                        STEM and life skills.</h3>
+            <div class="flow-text">
+                <div id="intro-paragraph">
+                    <p>Biohazard 4050 is a FIRST Robotics Competition Team, a group of high-schoolers who work each year to design, build, and</p>
+                    <p>program a robot to compete at regional competitions, and that's just scratching the surface. From toothbrush</p>
+                    <p>robots to legos to carwashes, we have a crazy ton of fun.</p>
                 </div>
-                <div class="column" style="background-color: white;">
-                    <h2>Developing New Skills</h2>
-                    <h3>Members gain valuable experience in many STEM skills, such as mechanics, wiring, fabrication, and programming;
-                        not to mention useful life skills, including strategic thinking, writing, public speaking, and much
-                        more.
-                    </h3>
-                </div>
-                <div class="column" style="background-color: white;">
-                    <h2>Growing in Knowledge</h2>
-                    <h3>Students leave the team with the Technical experience and knowledge that accompanies participation in
-                        a FIRST program.</h3>
+                <div class="row padding-3">
+                    <div class="col s12 m4 fade-in-right">
+                        <h2 class="center brand-text-green-darker">
+                            <i class="medium material-icons main-desc">done_all</i>
+                        </h2>
+                        <h5 class="center brand-text-gray brand-font">Reaching the Next Generation</h5>
+                        <p class="center description">It's our mission to reach out to students of all ages, gearing them to expand their horizons through STEM and life skills.</p>
+                    </div>
+                    <div class="col s12 m4 fade-in-up">
+                        <h2 class="center brand-text-green-darker">
+                            <i class="medium material-icons main-desc">settings</i>
+                        </h2>
+                        <h5 class="center brand-text-gray brand-font">Developing New Skills</h5>
+                        <p class="center description">Members gain valuable experience in many STEM skills, such as mechanics, wiring, fabrication, and programming; not to mention useful life skills, including strategic thinking, writing, public speaking, and much more.
+                        </p>
+                    </div>
+                    <div class="col s12 m4 fade-in-left">
+                        <h2 class="center brand-text-green-darker">
+                            <i class="medium material-icons main-desc">thumb_up</i>
+                        </h2>
+                        <h5 class="center brand-text-gray brand-font">Growing in Knowledge</h5>
+                        <p class="center description">Students leave the team with the Technical experience and knowledge that accompanies participation in a FIRST program.</p>
+                    </div>
                 </div>
             </div>
-            <a class="get-involved" href="get-involved.html">Get Involved!</a>
+
+            <!--Get Involved Button-->
+            <a id="get-involved-button" class="btn btn-large waves-effect brand-font" href="get-involved">Get Involved!</a>
         </div>
     </main>
-</body>
-<!-- Include jQuery -->
-<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!-- Include glide.js, the slider -->
-<script src="scripts/glide.min.js"></script>
-<!-- Include our main script -->
-<script src="scripts/main.js"></script>
 
+    <!--Footer-->
+    <div id="footer-placeholder"></div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+    <script src="scripts/glide.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
 </html>

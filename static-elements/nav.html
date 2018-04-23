@@ -1,0 +1,63 @@
+<script type="text/javascript">
+    $(".sidenav").sidenav();
+    $('.dropdown-trigger').dropdown({hover: false, coverTrigger: false});
+    $('.collapsible').collapsible();
+</script>
+
+
+
+
+<!--Mobile Nav-->
+<ul class="sidenav brand-font" id="mobile-nav">
+    <li><a href="index"><i class="material-icons">home</i>Home</a></li>
+    <li id="about-dropdown-m">
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header"><i class="material-icons right">arrow_drop_down</i><i class="material-icons">person</i>About</a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="about">Our Team</a></li>
+                    <li><a href="members">Members</a></li>
+                    <li><a href="mentors">Mentors</a></li>
+                    <li><a href="sponsors">Sponsors</a></li>
+                    <li><a href="calendar">Calendar</a></li>
+                  </ul>
+                </div>
+            </li> 
+        </ul>
+    </li>
+    <li><a href="get-involved"><i class="material-icons">call_made</i>Get Involved</a></li>
+    <div class="divider div-80 green"></div>
+
+    <li class="center"><a id="blog-button" href="https://blog.biohazard4050.org"><button class="btn waves-effect green darken-3 brand-font">BLOG</button></a></li>
+</ul>
+
+<!--Desktop Nav-->
+<ul id="about-dropdown" class="dropdown-content brand-font">
+    <li><a class="brand-text-green-darker" href="about">Our Team</a></li>
+    <li><a class="brand-text-green-darker" href="#!">Members</a></li>
+    <li><a class="brand-text-green-darker" href="#!">Mentors</a></li>
+    <li><a class="brand-text-green-darker" href="sponsors">Sponsors</a></li>
+    <li><a class="brand-text-green-darker" href="calendar">Calendar</a></li>
+</ul>
+
+<nav class="nav-extended brand-background-green-darker brand-font">
+    <div class="nav-wrapper">
+        <a data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="index" class="brand-logo center show-on-large hide-on-med-and-down">Biohazard 4050</a>
+        <a href="index" class="brand-logo center hide-on-large-only show-on-medium show-on-small">Biohazard</a>
+
+        <ul id="desktop-nav" class="hide-on-med-and-down">
+            <div id="left-nav">
+                <li class="fancy-underline"><a href="index">Home</a></li>
+                <li><a class="dropdown-trigger" data-target="about-dropdown"><i class="material-icons right">arrow_drop_down</i>About</a></li>
+            </div>
+            <div id="right-nav">
+                <li><a class="fancy-underline" href="get-involved">Get Involved</a></li>
+                <li >
+                    <a id="blog-button" class="btn waves-effect brand-font" href="https://blog.biohazard4050.org">BLOG</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</nav>
