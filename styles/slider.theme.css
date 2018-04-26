@@ -1,0 +1,31 @@
+.glide__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: none;
+    background-color: transparent;
+    height: 25%;
+    font-size: 100%;
+}
+
+.glide__arrow:focus {
+    background-color: transparent;
+}
+
+.glide__arrow > i {
+  font-size: 500%;
+  color: #109848;
+  transition-duration: 0.3s;
+}
+
+.glide__arrow > i:hover {
+    text-shadow: 0 8px 17px rgba(0,0,0,0.14), 0 3px 14px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.glide__arrow--prev {
+    left: 15px;
+}
+
+.glide__arrow--next {
+    right: 15px;
+}
