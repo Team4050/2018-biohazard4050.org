@@ -5,10 +5,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto:300" rel="stylesheet ">
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
     <link rel="stylesheet" href="styles/glide.core.min.css">
-    <link rel="stylesheet" href="styles/glide.theme.min.css">
+    <link rel="stylesheet" href="styles/slider.theme.css">
                
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
@@ -22,11 +22,12 @@
     <main>
         <div class="home">
             <div class="center brand-font">
-                    <h3> Welcome to Team 4050's spot on the internet! </h3>
-                    <h5> Feel free to have a poke around!</h5>
+                <h3> Welcome to Team 4050's spot on the internet! </h3>
+                <h5> Feel free to have a poke around!</h5>
             </div>
 
-            <div id="home-slider" class="glide">            
+            <div id="home-slider" class="glide">
+                
                 <div class="glide__wrapper">
                     <ul class="glide__track">
                         <li class="glide__slide"><img src="images/imageslider1.jpg"></li>
@@ -40,6 +41,10 @@
                         <li class="glide__slide"><img src="images/imageslider9.jpg"></li>
                     </ul>
                 </div>                
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--prev" data-glide-dir="<"><i class="material-icons">chevron_left</i></button>
+                    <button class="glide__arrow glide__arrow--next" data-glide-dir=">"><i class="material-icons">chevron_right</i></button>
+                </div>
             </div>
 
             <div class="divider green div-80"></div>
